@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inbox</title>
+    <link rel="stylesheet" href="_config/css/bootstrap.css">
+    <link rel="stylesheet" href="_config/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="_config/css/custom.css">
+    <link rel="stylesheet" href="_config/css/lightbox.css">
+</head>
+<body>
+<!--Navigation Bar-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="home.html"><span class="glyphicon glyphicon-plane"></span> Travel Track</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="glyphicon glyphicon-list-alt"></span> Forms
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="form_fill.html">Fill Forms</a></li>
+                        <li><a href="form_review.html">Review Forms</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+                <li><a href="contact.html"><span class="glyphicon glyphicon-send"></span> Contact Us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown active">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="glyphicon glyphicon-inbox"></span> Messages
+                        <span class="badge">2</span>
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="active"><a href="msg_new.html">Compose</a></li>
+                        <li><a href="msg_view.html">Inbox <span class="badge">2</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--Content-->
+<div class="container-fluid page-content">
+    <div class="card center-card">
+        <h2><b>Compose Message</b></h2>
+        <hr>
+        <form class="form" role="form" method="post" action="#">
+            <div class="form-group">
+                <label for="msg_name">Recipient's Name</label>
+                <input type="text" class="form-control" name="msg_name" id="msg_name" placeholder="Recipient's Name Here" autocomplete="off" required>
+            </div>
+
+            <div class="form-group">
+                <label for="msg_email">Recipient's Email</label>
+                <input type="email" class="form-control" name="msg_email" id="msg_email" placeholder="Recipient's Email Address Here" autocomplete="off" required>
+            </div>
+
+            <div class="form-group">
+                <label for="msg_subject">Subject</label>
+                <input type="text" class="form-control" name="msg_subject" id="msg_subject" placeholder="RE:" autocomplete="off" required>
+            </div>
+
+            <div class="form-group">
+                <label for="msg_content">Message</label>
+                <textarea type="text" class="form-control" cols="10" rows="4" name="msg_content" id="msg_content" placeholder="Enter your message..." autocomplete="off" required></textarea>
+            </div>
+
+            <label for="btn_submit_feedback"><b>NOTE:</b> Messages can only be sent to other Travel Track users.</label>
+            <button type="submit" class="btn btn-custom-1 btn-block" id="btn_submit_feedback" name="submit">Send</button>
+        </form>
+    </div>
+</div>
+
+<script src="_config/js/jquery.min.js"></script>
+<script src="_config/js/bootstrap.js"></script>
+<script src="_config/js/index.js"></script>
+</body>
+</html>

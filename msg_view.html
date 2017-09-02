@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inbox</title>
+    <link rel="stylesheet" href="_config/css/bootstrap.css">
+    <link rel="stylesheet" href="_config/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="_config/css/custom.css">
+    <link rel="stylesheet" href="_config/css/lightbox.css">
+    <link rel="stylesheet" href="_config/css/dataTables.css">
+</head>
+<body>
+<!--Navigation Bar-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="home.html"><span class="glyphicon glyphicon-plane"></span> Travel Track</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="glyphicon glyphicon-list-alt"></span> Forms
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="form_fill.html">Fill Forms</a></li>
+                        <li><a href="form_review.html">Review Forms</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+                <li><a href="contact.html"><span class="glyphicon glyphicon-send"></span> Contact Us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown active">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="glyphicon glyphicon-inbox"></span> Messages
+                        <span class="badge">2</span>
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="msg_new.html">Compose</a></li>
+                        <li class="active"><a href="msg_view.html">Inbox <span class="badge">2</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--Content-->
+<div class="container-fluid page-content">
+    <div class="card table-card">
+        <table class="table" id="example">
+            <thead>
+            <tr>
+                <th>DATE RECIEVED</th>
+                <th>SUBJECT</th>
+                <th>MESSAGE</th>
+                <th>SENDER</th>
+                <th>ACTION</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>08/21/2017</td>
+                <td>Example</td>
+                <td>This is an example message.</td>
+                <td>otheruser@example.com</td>
+                <td>
+                    <p>
+                    <button class="btn btn-link"><span class="glyphicon glyphicon-share-alt"></span></button>
+                    <button class="btn btn-link"><span class="glyphicon glyphicon-share"></span></button>
+                    <button class="btn btn-link"><span class="glyphicon glyphicon-trash"></span></button>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>08/26/2017</td>
+                <td>Another Example</td>
+                <td>This is another example message.</td>
+                <td>yetanother@example.com</td>
+                <td>
+                    <p>
+                        <button class="btn btn-link"><span class="glyphicon glyphicon-share-alt"></span></button>
+                        <button class="btn btn-link"><span class="glyphicon glyphicon-share"></span></button>
+                        <button class="btn btn-link"><span class="glyphicon glyphicon-trash"></span></button>
+                    </p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="_config/js/jquery.min.js"></script>
+<script src="_config/js/bootstrap.js"></script>
+</body>
+</html>

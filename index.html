@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TravelTrack | User Login</title>
+    <link rel="stylesheet" href="_config/css/bootstrap.css">
+    <link rel="stylesheet" href="_config/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="_config/css/custom.css">
+    <link rel="stylesheet" href="_config/css/lightbox.css">
+</head>
+<body>
+<div class="page-content row container-fluid text-center">
+    <!--hidden back button-->
+    <div class="container-fluid card center-card hidden-div" id="back_regular_card">
+        <button class="btn-link" id="btn_back_regular"><span class="glyphicon glyphicon-chevron-left"></span>Go Back To Regular Login</button>
+    </div>
+
+    <!--Login Form-->
+    <div class="container-fluid card center-card" id="login_card">
+        <h2>Log In Here</h2>
+        <hr>
+        <form class="form" role="form" method="post" action="home.html">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" autocomplete="off" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="Your Password" autocomplete="off" required>
+            </div>
+
+            <button type="submit" class="btn btn-custom-1 btn-block" id="btn_login" name="submit">Sign In</button>
+        </form>
+        <a href="#" class="btn btn-custom-2 btn-block" id="btn_signup_form" name="submit">Create An Account</a>
+    </div>
+
+    <!--Signup Form-->
+    <div class="container-fluid card center-card hidden-div" id="signup_card">
+        <h2>Create Your Account</h2>
+        <hr>
+        <form class="form" role="form" method="post" action="home.html">
+            <div class="form-group">
+                <label for="username">Name</label>
+                <input type="text" class="form-control" name="username" id="username" placeholder="Your Name" autocomplete="off" required>
+            </div>
+
+            <div class="form-group">
+                <label for="new_email">Email</label>
+                <input type="email" class="form-control" name="new_email" id="new_email" placeholder="Your Email" autocomplete="off" required>
+            </div>
+
+            <div class="form-group">
+                <label for="new_password">Password</label>
+                <input type="password" class="form-control" name="new_password" id="new_password" placeholder="Your Password" autocomplete="off" required>
+            </div>
+
+            <button type="submit" class="btn btn-custom-1 btn-block" id="btn_signup" name="submit">Sign Up</button>
+        </form>
+        <a href="index.html" class="btn btn-custom-2 btn-block" id="btn_login_form" name="submit">Log In</a>
+    </div>
+
+    <!--Supervisor Login Form-->
+    <div class="container-fluid card center-card hidden-div" id="supr_login_card">
+        <h2>Supervisor Login</h2>
+        <hr>
+        <form class="form" role="form" method="post" action="supr_home.html">
+            <div class="form-group">
+                <label for="supr_email">Email</label>
+                <input type="email" class="form-control" name="supr_email" id="supr_email" placeholder="Your Email" autocomplete="off" required>
+            </div>
+
+            <div class="form-group">
+                <label for="supr_password">Password</label>
+                <input type="password" class="form-control" name="supr_password" id="supr_password" placeholder="Your Password" autocomplete="off" required>
+            </div>
+
+            <button type="submit" class="btn btn-custom-1 btn-block" id="btn_supr_login" name="submit">Sign In</button>
+        </form>
+    </div>
+
+    <!--System Admin Login Form-->
+    <div class="container-fluid card center-card hidden-div" id="admin_login_card">
+        <h2>System Admin Login</h2>
+        <hr>
+        <form class="form" role="form" method="post" action="admin_home.html">
+            <div class="form-group">
+                <label for="admin_email">Email</label>
+                <input type="email" class="form-control" name="admin_email" id="admin_email" placeholder="Your Email" autocomplete="off" required>
+            </div>
+
+            <div class="form-group">
+                <label for="admin_password">Password</label>
+                <input type="password" class="form-control" name="admin_password" id="admin_password" placeholder="Your Password" autocomplete="off" required>
+            </div>
+
+            <button type="submit" class="btn btn-custom-1 btn-block" id="btn_admin_login" name="submit">Sign In</button>
+        </form>
+    </div>
+
+    <div class="container-fluid card center-card">
+        <p><b>NOTE: </b>For Supervisor and Web Administrator login screens, use buttons below:</p>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <button name="btn_supr_form" id="btn_supr_form" class="btn btn-custom-1 box-btn">Supervisor Login</button>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <button name="btn_admin_form" id="btn_admin_form" class="btn btn-custom-1 box-btn">Web Admin Login</button>
+        </div>
+    </div>
+</div>
+
+<script src="_config/js/jquery.min.js"></script>
+<script src="_config/js/bootstrap.js"></script>
+<script src="_config/js/index.js"></script>
+</body>
+</html>

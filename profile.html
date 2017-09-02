@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="_config/css/bootstrap.css">
+    <link rel="stylesheet" href="_config/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="_config/css/custom.css">
+    <link rel="stylesheet" href="_config/css/lightbox.css">
+</head>
+<body>
+<!--Navigation Bar-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="home.html"><span class="glyphicon glyphicon-plane"></span> Travel Track</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="glyphicon glyphicon-list-alt"></span> Forms
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="form_fill.html">Fill Forms</a></li>
+                        <li><a href="form_review.html">Review Forms</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+                <li><a href="contact.html"><span class="glyphicon glyphicon-send"></span> Contact Us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="glyphicon glyphicon-inbox"></span> Messages
+                        <span class="badge">2</span>
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="msg_new.html">Compose</a></li>
+                        <li><a href="msg_view.html">Inbox <span class="badge">2</span></a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="profile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--Page Content-->
+<div class="container-fluid page-content">
+    <h2><b>Account Details</b></h2>
+    <hr>
+    <div class="profile-data">
+        <img src="_config/img/user.png" alt="Image Not Available" name="profile_photo" id="profile_photo" class="img-circle" >
+        <label for="profile_photo">
+            <h2><b>User Name</b></h2>
+        <table class="table table-responsive">
+            <tr>
+                <td><b>Username: </b></td>
+                <td> User Name </td>
+                <td><button class="btn btn-sm btn-custom-2 box-2"> CHANGE</button></td>
+            </tr>
+            <tr>
+                <td><b>Email Address: </b></td>
+                <td> username@example.com </td>
+                <td><button class="btn btn-sm btn-custom-2 box-2"> CHANGE</button></td>
+            </tr>
+            <tr>
+                <td><b>Password: </b></td>
+                <td> password </td>
+                <td><button class="btn btn-sm btn-custom-2 box-2"> CHANGE</button></td>
+            </tr>
+        </table>
+    </div></label>
+    <div class="profile-data">
+
+    </div>
+    <!--<h4>
+        <b>Account Details for User Name</b>
+        <a href='#' class='btn btn-sm btn-danger text-center' style="float: right">DELETE MY ACCOUNT</a>
+    </h4>
+    <h5>Here you can edit your email and password.</h5>
+    <table class="table" id="example black-text">
+        &lt;!&ndash;<thead>
+        <tr>
+            <th>ITEM</th>
+            <th>VALUE</th>
+        </thead>&ndash;&gt;
+        <tbody>
+        <tr>
+            <td>Your Name</td>
+            <td>User Name</td>
+        </tr>
+
+        <tr>
+            <td>Your Email</td>
+            <td>username@example.com</td>
+            </tr>
+
+        <tr>
+            <td>Your Password</td>
+            <td>password</td>
+            </tr>
+
+        </tbody>
+    </table>-->
+</div>
+<script src="_config/js/jquery.min.js"></script>
+<script src="_config/js/bootstrap.min.js"></script>
+</body>
+</html>
